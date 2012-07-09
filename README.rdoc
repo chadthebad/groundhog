@@ -2,9 +2,8 @@
 
 This will be a simple photo uploading site, that will have various features added to create future versions.  The purpose of this is to familiarize myself with rails, and all that you can do with the framework.  For more information on the project see: https://github.com/chadthebad/meta-album
 
-== Getting Started
+== This version
 
-This version:
   Create Models, Controllers, and Views for Users, Photos, and Albums.
 
 == Getting Started
