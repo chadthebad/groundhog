@@ -22,3 +22,10 @@ the following resources handy:
 
 The Getting Started Guide: http://guides.rubyonrails.org/getting_started.html
 
+== Create Models
+
+  rails generate model user name:string password:string
+  rails generate model photo title:string album_id:integer
+  rails generate model album title:string user_id:integer
+  rake db:migrate
+  
