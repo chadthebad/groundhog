@@ -1,0 +1,9 @@
+<h1>
+  <%= link_to 'Albums', albums_path %> / 
+  <%= link_to @photo.album.title, @photo.album %> / 
+  Add Photo
+</h1>
+
+<p>Choose a photo to upload...</p>
+
+<%= render 'form' %>

@@ -1,0 +1,22 @@
+<h1><%= link_to 'Albums', albums_path %> / <%= @album.title %></h1>
+
+<p><%= pluralize(@album.photos.count, 'photo')%></p>
+
+<table>
+  <tr>
+    <th>Photos<th>
+    <th>Actions</th>
+  </tr>
+  
+  <% @album.photos.each do |photos| %>
+      <tr>
+        <td><%= link_to photos.title, photos %></td>
+        <td><%= link_to 'Edit', edit_album_path(@album) %></td>
+        <td><%= link_to 'Delete', @photo, confirm: 'Really?', method: :delete %></td>
+      </tr>
+    <% end %>
+</table>
+
+</br>
+
+<%= link_to 'Add Photo', new_photo_path(@photo, :album_id => @album.id) %>

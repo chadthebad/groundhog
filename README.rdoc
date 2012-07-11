@@ -29,3 +29,9 @@ The Getting Started Guide: http://guides.rubyonrails.org/getting_started.html
   rails generate model album title:string user_id:integer
   rake db:migrate
   
+== Create Controllers
+
+  rails generate controller Users
+  rails generate controller Photos
+  rails generate controller Albums
+  
